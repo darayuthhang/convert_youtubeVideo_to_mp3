@@ -1,5 +1,5 @@
 import youtube_dl
-def youtubeDownload():
+def youtubeDownload(url):
     save_path = "your own path"
     # outtmpl help navigate your path where you want to save your file
     # after downloading from youtube
@@ -13,9 +13,10 @@ def youtubeDownload():
         }
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
-            ydl.download(["https://www.youtube.com/watch?v=cxZ-x84HwHU"])
+            ydl.download([url])
     except FileNotFoundError as fnf_error:
         print("file not found ")
 
 if __name__ == '__main__':
-    youtubeDownload()
+    url = "your own youtube url that you want to download"
+    youtubeDownload(url)
