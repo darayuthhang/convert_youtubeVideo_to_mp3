@@ -2,6 +2,8 @@ import youtube_dl
 import os
 def youtubeDownload():
     save_path = "/Users/darayuthhang/Downloads/"
+    # outtmpl help navigate your path where you want to save your file
+    # after downloading from youtube
     ydl_opts = {
             'format': 'bestaudio/best',
             'outtmpl': save_path + '%(title)s.%(ext)s',
