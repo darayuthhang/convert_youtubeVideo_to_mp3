@@ -1,5 +1,4 @@
 import youtube_dl
-import os
 def youtubeDownload():
     save_path = "/Users/darayuthhang/Downloads/"
     # outtmpl help navigate your path where you want to save your file
